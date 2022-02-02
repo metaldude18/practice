@@ -5,13 +5,20 @@
         <title>My 1st BuNNies Webpage</title>
         <link rel="stylesheet" href="styles/style.css" type="text/css">
     </head>
-    <!--add nav target links for article and table and footer-->
+    <!--add nav target links for video, audio-->
     <body>
         <header>
             <nav>
                 <ul>
                     <li><a href="#intro">What are Rabbits?</a></li>
                     <li><a href="#imgs">CUTE IMAGES OF Bunnies</a></li>
+                    <li><a href="#breeds">Types of Friendly Bunny Breeds</a></li>
+                    <li><a href="#video">Video of Rabbits</a></li>
+                    <li><a href="#audio">Rabbit Sounds</a></li>
+                    <li><a href="#table">Table of Bunny Breeds Owned by Users</a></li>
+                    <li><a href="#form">User Survey</a></li>    
+                    <li><a href="#contactinfo">Contact Info</a></li>
+
                 </ul>
             </nav>
             <h1>Rabbits - Bun buns - Hoppity Loppities - Bunnies</h1>
@@ -22,7 +29,13 @@
                 <h2>What are Rabbits?</h2>
             </header>
         
-            <p id="intro">Rabbits are the most <strong>misunderstood</strong> domesticated mammals by <em>hoomins</em>! <br>
+            <p id="intro">Rabbits are the most <strong>misunderstood</strong> domesticated <u>mammals</u> by <em>hoomins</em>! <br>
+            <hr>
+            <section>
+                <h3>The life of a rabbit:</h3>
+            </section>    
+
+            
             <header>
                 <h3 id="imgs">CUTE IMAGES OF Bunnies</h3>
             </header>        
@@ -34,32 +47,110 @@
                     <figcaption>The King of Winstonia, Winston enjoying salad with his tongue out!</figcaption>
             </figure>
             <header>
-                <h3 id="article">Types of Friendly Bunny Breeds</h3>
+                <h3>Types of Friendly Bunny Breeds</h3>
             </header>
-            <article>
+            <article id="breeds">
                 <p>4 of my favorite friendly bunny breeds are Mini Rexs, Holland Lops, Mini Lops, and Flemish Giants.</p>
             </article> 
             <aside>
                 <p>"Hoomins are tolerated by us buns because you feed us a lot and clean up our tiny cute bunny poops that can be mistaken for chocolate cereal puffs," said Winston.</p>
             </aside>
-<!--redo the table and add a form after plus video and audio later-->
-            <table>
+<!--add a form after plus video and audio later-->
+            <section id="video">
+                <video src="Later.mp4" autoplay loop controls>Video not supported</video>
+            </section>
+            <section id="audio">
+                <audio autoplay controls>
+                    <source src="later.mp3" type="audio/mp3">
+                </audio>
+            </section>
+            <table id="table">
+                <h3>Table of Bunny Breeds Owned by Users</h3>
                 <thead>
                     <tr>
-                       <td>Top 3 Cuddly Bun Bun Breeds</td>
+                        <tr></tr>
+                        <th scope="col">Number of Specific Rabbit Breed Owned</th>
+                        <th scope="col">Total Number of Rabbits Owned</th>
                     </tr>
-                    
                 </thead>
                 <tbody>
-                    <tr class="row1"><td>Holland Lops</td></tr>
-                    <tr class="row2"><td>Mini Lops</td></tr>
-                    <tr class="row2"><td>Mini Rexs</td></tr>
+                    <tr>
+                        <th scope="row">Mini Rexs</th>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mini Lops</th>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>    
+                    <tr>
+                        <th scope="row">Holland Lops</th>
+                        <td>10</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Flemish Giants</th>
+                        <td>7</td>
+                        <td>11</td>
+                    </tr>
                 </tbody>
+                <tfoot>
+                    <th scope="row">Total of Buns</th>
+                    <td>24</td>
+                    <td>35</td>
+                </tfoot>
             </table>
         
+            <section id="form">
+                <h5>User Survey</h5>
+                <form action="User Form Values/formvalue.html" method="POST">
+                    <label for="why">Why do you love rabbits?</label>
+                    <input type="text" name="why" id="why">
+                    <hr>
+                    <label for="bunpwd">Your password:</label>
+                    <input type="password" name="bunpwd" id="bunpwd">
+                    <hr>
+                    <label for="bunsowned">How many buns do you own?</label>
+                    <input type="number" name="bunsowned" id="bunsowned" step="1">
+                    <hr>
+                    <label for="wish">How many buns do you wish you could have?</label>
+                    <input type="range" name="wish" id="wish" min="1" max="25" step="1">
+                    <hr>
+                </form>
+                <form action="User Form Values/formvalue.html" method="POST">
+                    <p>What bunny body parts are cute to you?</p>
+                    <label for="tail">Tail</label>
+                    <input type="checkbox" name="cute" id="tail" value="tail">
+                    <label for="nose">Nose</label>
+                    <input type="checkbox" name="cute" id="nose" value="nose">
+                    <label for="fur">Fur</label>
+                    <input type="checkbox" name="cute" id="fur" value="fur">
+                </form>
+                <form action="User Form Values/formvalue.html" method="POST">
+                    <p>Which bunny breed is cutest?</p>
+                    <input type="radio" name="cutest" id="minilops" value="minilops" 
+                    <label for="minilops">Mini Lops</label>
+                    <input type="radio" name="cutest" id="rex" value="minirex"
+                    <label for="rex">Mini Rex</label>
+               
+                </form>
+                <form action="User Form Values/formvalue.html" method="POST">
+                    <label for="food">What do you feed your rabbits?</label>
+                    <select id="food" name="feed">
+                        <option value="hay">Hay</option>
+                        <option value="carrots">Carrots</option>
+                        <option value="carrotcake">Carrot Cake</option>
+                        <option value="bananas">Bananas</option>
+                        <option value="salad">Salad</option>
+                    </select>
+                </form>
+
+            </section>
         </main>
         <footer>
-            <p>By: metaldude18</p>
+            <h4>Contact Info</h4>
+            <p id="contactinfo">By: metaldude18</p>
         </footer>
     </body>
 </html>
