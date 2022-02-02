@@ -1,0 +1,57 @@
+<body>
+    <header>
+      <h1 id="title">How Does Your ADHD affect you?</h1>
+      <p id="description">What are some of your symptoms?</p>
+    </header>
+    <section>
+      <form id="survey-form">
+        <label for="name" id="name-label">Your Name</label>
+        <input type="text" placeholder="First & Last" id="name" required><br>
+        <label for="email-label" id="email-label">Your Email</label>
+        <input type="email" placeholder="Personal Email" id="email" required><br>
+        <label for="number" id="number-label">The age you were first diagnosed?</label>
+        <input type="number" name="number" placeholder="4 - 80 years old" min="4" max="80" id="number"><br>
+        
+        <label for="diagnosis">Choose your ADHD type</label>
+          <select id="dropdown" name="diagnosis">
+            <option value="inattentive">Inattentive</option>
+            <option value="hyperactive">Hyperactive</option>
+            <option value="combined">Combined</option>
+            <option value="unknown">Unknown</option>
+        </select>  
+        
+        <p>Who diagnosed you?</p>
+        <input type="radio" id="pcp" name="who" value="PCP">   
+        <label for="pcp">PCP</label><br>
+        <input type="radio" id="psychologist" name="who" value="Psychologist">   
+        <label for="psychologist">Psychologist</label><br>
+        <input type="radio" id="psychiatrist" name="who" value="Psychiatrist">   
+        <label for="psychiatrist">Psychiatrist</label><br>
+        <input type="radio" id="self" name="who" value="Self">   
+        <label for="self">Self</label><br>
+        
+        
+        
+        <p>What symptoms are you experiencing daily that is negatively impacting you?</p>
+        <input type="checkbox" id="hyper" name="hyper" value="hyper">
+        <label for="hyper">Hyperactivity</label><br>
+        <input type="checkbox" id="inatt" name="inatt" value="inatt">
+        <label for="inatt">Inattentive</label><br>
+        <input type="checkbox" id="impul" name="impul" value="impul">
+        <label for="impul">Impulsivity</label><br>
+  
+        
+        
+        
+        <label for="textarea" id="textarea">User comments</label><br>
+        <textarea rows="8" cols="40" id="textarea"> 
+        </textarea><br><br>
+        
+        
+        
+        
+        <input type="submit" value="Submit" id="submit">
+        
+      </form>  
+    </section>  
+  </body>  
