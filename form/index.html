@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="style.css" method="POST">
+        <p>What is your favorite pets?</p>
+        <label for="dog">Dog</label>
+        <input type="checkbox" name="pet" id="dog" value="dog">
+        <label for="cat">Cat</label>
+        <input type="checkbox" name="pet" id="cat" value="cat"
+        <label for="bunny">Bunny</label>
+        <input type="checkbox" name="pet" id="bunny" value="bunny">        
+    </form>
+
+    <form>
+        <p>What OS do you like?</p>
+        <input type="radio" name="os" id="mac" value="mac">
+        <label for="mac">Mac</label>
+        <input type="radio" name="os" id="linux" value="linux">
+        <label for="linux">Linux</label>
+    </form>
+
+    <form>
+        <label for="device">What type of device do you mainly use?</label>
+        <select id="device" name="device">
+            <option value="mobile">Mobile</option>
+            <option value="desktop">Desktop</option>
+            <option value="laptop">Laptop</option>
+            <option value="tablet">Tablet</option>
+
+        </select>
+    </form>
+
+    <!--Datalist-->
+
+    <form>
+        <label for="adobe">What Adobe product do you use the most?</label>
+        <input type="text" name="product" id="adobe" list="products">
+        <br>
+        <datalist id="products">
+            <option value="ps"></option>
+            <option value="pr"></option>
+            <option value="ai"></option>
+            <option value="ch"></option>
+            <option value="lrc"></option>
+            <option value="me"></option>
+        </datalist>
+    </form>
+<!--textarea-->
+
+    <form>
+        <label for="how">How do you use your Adobe product?</label>
+        <br>
+        <textarea id="how" name="use" rows="4" cols="25">Explain with as much detail please!</textarea>
+    </form>
+
+<!--submit-->
+
+    <form>
+        <input type="submit" value="Done & Send">
+    </form>
+    
+    
+
+</body>
+</html>
