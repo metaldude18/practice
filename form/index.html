@@ -7,6 +7,11 @@
     <title>Forms</title>
 </head>
 <body>
+    <form>
+        <label for="device">How many devices do you own?</label>
+        <input type="number" name="number" id="device" min="0" max="15" step="1">
+
+    </form>
     <form action="style.css" method="POST">
         <p>What is your favorite pets?</p>
         <label for="dog">Dog</label>
@@ -56,7 +61,7 @@
     <form>
         <label for="how">How do you use your Adobe product?</label>
         <br>
-        <textarea id="how" name="use" rows="4" cols="25">Explain with as much detail please!</textarea>
+        <textarea id="how" name="use" rows="4" cols="25" minlength="30" maxlength="300">Explain with as much detail please!</textarea>
     </form>
 
 <!--submit-->
